@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from './pages/root';
 import WithButton from './pages/withButton'
+import ManualCalc from './pages/manualCalc';
+import InfinitLib from './pages/infinitLib';
 
 import {
   createBrowserRouter,
@@ -19,11 +21,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/height-calc",
-    element: 'sdfsdwith button',
+    element: <ManualCalc/>,
   },
   {
     path: "/infinit-lib",
-    element: '/infinit-lib',
+    element: <InfinitLib/>,
   },
   {
     path: "/intersection",
