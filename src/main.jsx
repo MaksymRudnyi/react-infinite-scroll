@@ -4,6 +4,7 @@ import Root from './pages/root';
 import WithButton from './pages/withButton'
 import ManualCalc from './pages/manualCalc';
 import InfinitLib from './pages/infinitLib';
+import IntersectionOserverSample from './pages/intersectionObserver'
 
 import {
   createBrowserRouter,
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/intersection",
-    element: '/intersection',
+    element: <IntersectionOserverSample/>,
   },
   {
     path: "/virtual-window",

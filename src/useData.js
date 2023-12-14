@@ -10,8 +10,6 @@ export const useData = () => {
     const [isError, setIsError] = useState(false);
     const [offset, setOffset] = useState(0)
 
-    useEffect(() => {fetchMoreData()}, [])
-
     const fetchMoreData = () => {
         setIsLoading(true);
         setIsError(false);
