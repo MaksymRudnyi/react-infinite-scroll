@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
-export const useData = (page = 1, limit = 20) => {
+export const useData = (limit = 20) => {
     const [items, setItems] = useState([]);
     const [hasMore, setHasMore] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
-    const fetchMoreData = () => {
+    const fetchMoreData = (page) => {
         setIsLoading(true);
         setIsError(false);
 
