@@ -7,8 +7,7 @@
     flex-direction: row;
     gap: 16px;
     background: rgb(222, 226, 236);
-    max-height: 200px;
-    overflow: hidden;
+    
 }
 
 .card img {

@@ -2,7 +2,7 @@ import './card.css';
 
 const Card = ({ title, author_name, first_publish_year, cover_i, number_of_pages_median, ratings_average, first_sentence, ...props}) => {
     return (
-        <div className="card" {...props}>
+        <div className="card">
             <img src={`https://covers.openlibrary.org/b/id/${cover_i}-M.jpg`} alt={title}/>
             <div>
                 <h4>{title}</h4>
