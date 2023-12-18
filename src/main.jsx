@@ -5,6 +5,7 @@ import WithButton from './pages/withButton'
 import CalcHeight from './pages/calcHeight';
 import IntersectionObs from './pages/inersectionObs';
 import InfiniteLib from './pages/infintLib';
+import Virtual from './pages/virtual';
 
 import {
   createBrowserRouter,
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/virtual-window",
-    element: '/virtual-window',
+    element: <Virtual/>,
   },
 ]);
 
