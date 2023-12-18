@@ -12,7 +12,7 @@ export const useData = (page = 1, limit = 20) => {
         setIsError(false);
 
         axios
-            .get(`https://openlibrary.org/search.json?q=*&offset=${page * limit - limit}&limit=${limit}&fields=title,author_name,first_publish_year,cover_i,number_of_pages_median,ratings_average,first_sentence`)
+            .get(`https://openlibrary.org/search.json?q=lord&offset=${page * limit - limit}&limit=${limit}&fields=title,author_name,first_publish_year,cover_i,number_of_pages_median,ratings_average,first_sentence`)
             .then((res) => {
                 setItems((prevItems) => [...prevItems, ...res.data.docs]);
 
